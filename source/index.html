@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html lang="en" data-validate="html">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project name</title>
+    <title>Travel</title>
     <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -28,7 +28,7 @@
               <p class="logo__title">Travel</p>
             </div>
 
-            <button class="burger" type="button" aria-label="Открыть меню." data-toggle-menu>
+            <button class="burger" type="button" aria-label="Open the menu." data-toggle-menu>
               <span class="burger__line"></span>
             </button>
 
@@ -36,38 +36,182 @@
               <div class="header__collapse-wrapper">
                 <nav class="nav">
                   <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#">Цены</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Доставка</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Условия аренды</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">About Us</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Routes</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Contacts</a></li>
                   </ul>
                 </nav>
-
-                <ul class="social">
-                  <li class="social__item">
-                    <a class="social__link" href="#" aria-label="Написать нам в Телеграм.">
-                      <svg class="social__icon" role="img" width="40" height="40">
-                        <use href="/__spritemap#sprite-tg"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a class="social__link" href="#" aria-label="Страница в ВКонтакте.">
-                      <svg class="social__icon" role="img" width="40" height="40">
-                        <use xlink:href="/__spritemap#sprite-vk"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
         </div>
       </header>
 
-      <main class="page__main"></main>
+      <main class="page__main">
+        <section class="hero">
+          <div class="container">
+            <div class="hero__container">
+              <div class="hero__content">
+                <h1 class="hero__title">Discover the World with Us</h1>
+                <p class="hero__text">Top tours around the globe — unforgettable journeys await</p>
 
-      <footer class="page__footer">footer</footer>
+                <ul class="hero__list">
+                  <li class="hero__item">
+                    <p class="hero__text">
+                      from <span class="hero__text hero__text--xl">$499</span> per tour — affordable
+                      prices
+                    </p>
+                  </li>
+                  <li class="hero__item">
+                    <p class="hero__text">
+                      <span class="hero__text hero__text--xl">35%</span> discount for early bookings
+                    </p>
+                  </li>
+                  <li class="hero__item">
+                    <p class="hero__text">
+                      Top 10 destinations for <span class="hero__text hero__text--xl">$499</span>
+                    </p>
+                  </li>
+                </ul>
+
+                <a class="hero__button button" href="#">Book a Tour</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="routes">
+          <div class="container">
+            <h2 class="visually-hidden">Best Routes for Your Adventures</h2>
+
+            <ul class="routes__list">
+              <li class="routes__item">Explore exotic islands and beaches</li>
+              <li class="routes__item">Dive into the atmosphere of ancient cities</li>
+              <li class="routes__item">Enjoy gastronomic tours</li>
+              <li class="routes__item">Travel safely and comfortably</li>
+            </ul>
+
+            <a class="routes__button button" href="#">Book a Tour</a>
+          </div>
+        </section>
+
+        <article class="lead">
+          <h2 class="lead__title">Book Your Dream Journey</h2>
+
+          <form class="lead__form" action="" method="get">
+            <label class="lead__field">
+              <span class="visually-hidden">Enter your name:</span>
+              <input class="lead__input" type="text" name="name" placeholder="name" required />
+            </label>
+
+            <div class="lead__field">
+              <label class="lead__label">
+                <span class="visually-hidden">Enter your email:</span>
+                <input
+                  class="lead__input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </label>
+            </div>
+
+            <div class="lead__checkbox">
+              <label class="lead__label" for="accept"> I accept the Privacy Policy</label>
+              <input class="lead__input" type="checkbox" name="accept" id="accept" required />
+            </div>
+
+            <button class="lead__submit" type="submit">Submit Form</button>
+          </form>
+        </article>
+      </main>
+
+      <footer class="page__footer footer">
+        <div class="container">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">About Us</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Routes</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Contacts</a></li>
+          </ul>
+
+          <div class="footer__container">
+            <div class="footer__wrapper">
+              <div class="logo">
+                <img
+                  class="logo__img"
+                  src="./img/logo.svg"
+                  width="50"
+                  height="50"
+                  alt="Logotype travel company."
+                />
+                <p class="logo__title">Travel</p>
+              </div>
+
+              <p class="footer__copyright">© 2024, Copyright.</p>
+            </div>
+
+            <div class="footer__wrapper">
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Our page Instagram.">
+                    <svg class="social__icon" role="img" width="32" height="32">
+                      <use href="/__spritemap#sprite-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Our page Tiktok.">
+                    <svg class="social__icon" role="img" width="32" height="32">
+                      <use xlink:href="/__spritemap#sprite-tiktok"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Our page Linkedin.">
+                    <svg class="social__icon" role="img" width="32" height="32">
+                      <use xlink:href="/__spritemap#sprite-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Our page Facebook.">
+                    <svg class="social__icon" role="img" width="32" height="32">
+                      <use xlink:href="/__spritemap#sprite-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Our page Telegram.">
+                    <svg class="social__icon" role="img" width="32" height="32">
+                      <use xlink:href="/__spritemap#sprite-telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Our page Youtube.">
+                    <svg class="social__icon" role="img" width="32" height="32">
+                      <use xlink:href="/__spritemap#sprite-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <a class="footer__link" href="#">Privacy policy</a>
+            </div>
+          </div>
+
+          <div class="footer__wrapper">
+            <a class="footer__button button" href="#">Book a Tour</a>
+            <a class="footer__link" href="#">Terms of Use</a>
+          </div>
+        </div>
+      </footer>
 
       <script src="js/vendor.js" type="module"></script>
       <script src="js/main.js" type="module"></script>
