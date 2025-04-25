@@ -1,0 +1,68 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black: #000000;
+$color-default-black-10: rgba($color-default-black, 0.1);
+$color-default-white: #ffffff;
+
+// Project palette
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
+// $color-catalina-blue: #1d2e5b;
+// $color-catalina-blue-15: rgba($color-catalina-blue, 0.15);
+$color-skyblue: #7FDDF5;
+$color-chartreuse-yellow: #d7ea0b;
+$color-chartreuse-yellow-60: rgba($color-chartreuse-yellow, 0.6);
+$color-chartreuse-yellow-90: rgba($color-chartreuse-yellow, 0.9);
+$color-neon-carrot: #ff922e;
+$color-hint-of-red: #f2f1f0;
+
+// Gradient
+
+// $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$skyblue-to-right: linear-gradient(35deg, rgba(127, 221, 245, 0.65) 15%, rgba(253, 246, 45, 0.32) 33%, rgba(127, 221, 245, 0.59) 64%, rgba(253, 246, 45, 0.18) 100%);
+
+// Typography
+// ---------------------------------
+
+// переменная используемая в html для подключения скейлинга
+$fz-default: 16px;
+
+// Fonts
+// ---------------------------------
+$ff-roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
+$ff-unbounded: "Unbounded", "Arial", sans-serif;
+
+// у некоторых шрифтов в ios возникают проблемы с символом рубля
+// https://www.artlebedev.ru/kovodstvo/sections/159/#13
+$ff-rouble: "Rouble", "Arial", sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default: ease;
+$trans-default: 0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-600: 0.6s $tf-default;
+$trans-ease-in-out-300: 0.3s ease-in-out;
+$trans-ease-in-out-500: 0.5s ease-in-out;
+
+// Viewports
+// ---------------------------------
+
+$vp-320: 320px;
+$vp-375: 375px;
+$vp-768: 768px;
+$vp-1024: 1024px;
+$vp-1280: 1280px;
+$vp-1440: 1440px;
+$vp-1920: 1920px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

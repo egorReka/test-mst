@@ -1,0 +1,7 @@
+@use "../bootstrap.scss" as *;
+
+.page__main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}

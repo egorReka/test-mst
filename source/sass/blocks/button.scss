@@ -1,0 +1,51 @@
+@use "../bootstrap.scss" as *;
+
+.button {
+  display: block;
+  max-width: 500px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  border-radius: 10px;
+  background-color: $color-chartreuse-yellow;
+  color: $color-default-black;
+  user-select: none;
+  cursor: pointer;
+
+  transition: background-color $trans-default;
+
+  @include hover-focus {
+    background-color: $color-chartreuse-yellow-60;
+
+    &:active {
+      background-color: $color-chartreuse-yellow-90;
+    }
+  }
+
+  &:disabled,
+  &:not([type="button"]):not([type="submit"]):not([href]) {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  &--second {
+    border: 1px solid $color-chartreuse-yellow;
+    background-color: $color-default-white;
+    transition: box-shadow $trans-default, opacity $trans-default;
+
+    @include hover-focus {
+      box-shadow: 0 0 0 2px $color-chartreuse-yellow;
+      background-color: $color-default-white;
+
+      &:active {
+        box-shadow: 0 0 0 4px $color-chartreuse-yellow;
+        background-color: $color-default-white;
+      }
+    }
+  }
+}
