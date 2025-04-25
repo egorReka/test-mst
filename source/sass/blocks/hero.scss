@@ -1,0 +1,64 @@
+@use "../bootstrap.scss" as *;
+
+.hero__container {
+  display: flex;
+}
+
+.hero__content {
+  display: grid;
+  max-width: 740px;
+  padding: 204px 0 0;
+}
+
+.hero__title {
+  margin: 0 0 29px;
+  font-family: $ff-prata;
+  font-size: 80px;
+  line-height: 1;
+}
+
+.hero__text {
+  margin: 0 0 50px;
+  font-size: 45px;
+  line-height: 1.2;
+}
+
+.hero__list {
+  display: grid;
+  gap: 32px;
+  margin: 0 0 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.hero__item {
+  justify-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px 0 2px;
+  line-height: 1.1;
+  border-radius: 4px;
+  background-color: $color-jaguar-70;
+
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 39px;
+    height: 37px;
+    background-image: url('/__spritemap#sprite-tick-view');
+  }
+}
+
+.hero__item-accent {
+  font-family: $ff-prata;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  justify-self: flex-start;
+}

@@ -1,0 +1,24 @@
+@use "../bootstrap.scss" as *;
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 0;
+  font-family: $ff-prata;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo__img {
+  width: 50px;
+  min-width: min-content;
+  height: 40px;
+}
+
+.logo__title {
+  margin: 0;
+}

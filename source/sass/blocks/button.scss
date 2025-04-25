@@ -3,48 +3,48 @@
 .button {
   display: block;
   max-width: 500px;
-  padding: 20px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.2;
+  padding: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
   border: none;
-  border-radius: 10px;
-  background-color: $color-chartreuse-yellow;
-  color: $color-default-black;
+  border-radius: 4px;
+  background-color: $color-default-white;
+  color: $color-nero;
   user-select: none;
   cursor: pointer;
 
-  transition: background-color $trans-default;
+  // transition: background-color $trans-default;
 
   @include hover-focus {
-    background-color: $color-chartreuse-yellow-60;
+    // background-color: $color-chartreuse-yellow-60;
 
     &:active {
-      background-color: $color-chartreuse-yellow-90;
+      // background-color: $color-chartreuse-yellow-90;
     }
   }
 
   &:disabled,
   &:not([type="button"]):not([type="submit"]):not([href]) {
     pointer-events: none;
-    opacity: 0.5;
+    // opacity: 0.5;
   }
 
   &--second {
-    border: 1px solid $color-chartreuse-yellow;
-    background-color: $color-default-white;
-    transition: box-shadow $trans-default, opacity $trans-default;
+    // border: 1px solid $color-chartreuse-yellow;
+    // background-color: $color-default-white;
+    // transition: box-shadow $trans-default, opacity $trans-default;
 
     @include hover-focus {
-      box-shadow: 0 0 0 2px $color-chartreuse-yellow;
-      background-color: $color-default-white;
+      // box-shadow: 0 0 0 2px $color-chartreuse-yellow;
+      // background-color: $color-default-white;
 
       &:active {
-        box-shadow: 0 0 0 4px $color-chartreuse-yellow;
-        background-color: $color-default-white;
+        // box-shadow: 0 0 0 4px $color-chartreuse-yellow;
+        // background-color: $color-default-white;
       }
     }
   }

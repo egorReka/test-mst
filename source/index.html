@@ -15,8 +15,8 @@
   <body class="page">
     <div class="wrapper">
       <header class="page__header header">
-        <div class="container">
-          <div class="header__container">
+        <div class="header__container">
+          <div class="header__wrapper">
             <div class="logo">
               <img
                 class="logo__img"
@@ -32,8 +32,8 @@
               <span class="burger__line"></span>
             </button>
 
-            <div class="header__wrapper" data-nav-container>
-              <div class="header__collapse-wrapper">
+            <div class="header__nav-container" data-nav-container>
+              <div class="header__nav-collapse-wrapper">
                 <nav class="nav">
                   <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link" href="#">About Us</a></li>
@@ -44,42 +44,51 @@
               </div>
             </div>
           </div>
+
+          <section class="header__section hero">
+            <div class="hero__content">
+              <h1 class="hero__title">Discover the World with Us</h1>
+              <p class="hero__text">Top tours around the globe — unforgettable journeys await</p>
+
+              <ul class="hero__list">
+                <li class="hero__item">
+                  from <span class="hero__item-accent">$499</span> per tour — affordable prices
+                </li>
+                <li class="hero__item">
+                  <span class="hero__item-accent">35%</span> discount for early bookings
+                </li>
+                <li class="hero__item">
+                  Top 10 destinations for
+                  <span class="hero__item-accent">2025</span>
+                </li>
+              </ul>
+
+              <a class="hero__button button" href="#">Book a Tour</a>
+            </div>
+          </section>
+
+          <div class="header__img">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="img/hero.webp 1x, img/hero@2x.webp 2x"
+                width="763"
+                height="1009"
+              />
+
+              <img
+                src="img/hero.jpg"
+                srcset="img/hero@2x.jpg 2x"
+                width="763"
+                height="1009"
+                alt="Hero image"
+              />
+            </picture>
+          </div>
         </div>
       </header>
 
       <main class="page__main">
-        <section class="hero">
-          <div class="container">
-            <div class="hero__container">
-              <div class="hero__content">
-                <h1 class="hero__title">Discover the World with Us</h1>
-                <p class="hero__text">Top tours around the globe — unforgettable journeys await</p>
-
-                <ul class="hero__list">
-                  <li class="hero__item">
-                    <p class="hero__text">
-                      from <span class="hero__text hero__text--xl">$499</span> per tour — affordable
-                      prices
-                    </p>
-                  </li>
-                  <li class="hero__item">
-                    <p class="hero__text">
-                      <span class="hero__text hero__text--xl">35%</span> discount for early bookings
-                    </p>
-                  </li>
-                  <li class="hero__item">
-                    <p class="hero__text">
-                      Top 10 destinations for <span class="hero__text hero__text--xl">$499</span>
-                    </p>
-                  </li>
-                </ul>
-
-                <a class="hero__button button" href="#">Book a Tour</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section class="routes">
           <div class="container">
             <h2 class="visually-hidden">Best Routes for Your Adventures</h2>
