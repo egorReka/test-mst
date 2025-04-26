@@ -5,7 +5,7 @@
   padding: 30px;
   font-weight: 700;
   font-size: 24px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   text-transform: uppercase;
@@ -15,6 +15,12 @@
   color: $color-nero;
   user-select: none;
   cursor: pointer;
+
+  &--dark {
+    font-weight: 400;
+    background-color: $color-jaguar;
+    color: $color-default-white;
+  }
 
   // transition: background-color $trans-default;
 

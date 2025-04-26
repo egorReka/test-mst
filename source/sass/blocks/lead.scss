@@ -1,0 +1,95 @@
+@use "../bootstrap.scss" as *;
+
+.lead {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+  border: 2px solid $color-swirl;
+  border-radius: 30px;
+  background-color: $color-default-white;
+  color: $color-casal;
+  overflow: clip;
+}
+
+.lead__container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 72px 0 72px 134px;
+}
+
+.lead__title {
+  max-width: 67%;
+  margin: 0 0 45px;
+  font-family: $ff-prata;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 1.1;
+}
+
+.lead__form {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  align-content: flex-start;
+  row-gap: 26px;
+}
+
+.lead__fieldset {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: flex-start;
+  gap: 12px;
+}
+
+.lead__input {
+  width: 100%;
+  padding: 13px 20px 13px 38px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: $color-casal;
+  border: 2px solid $color-light-grey;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: $color-bright-grey-70;
+  }
+}
+
+.lead__field-checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.lead__label {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.3;
+  color: $color-bright-grey;
+}
+
+.lead__input-checkbox {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid $color-smalt-blue;
+  border-radius: 4px;
+
+  &:checked {
+    background-image: url('/__spritemap#sprite-check-view');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.lead__img {
+  min-height: 100%;
+}
+
+.lead__img img {
+  height: 100%;
+  object-fit: cover;
+}

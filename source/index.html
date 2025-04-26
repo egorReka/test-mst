@@ -69,12 +69,7 @@
 
           <div class="header__img">
             <picture>
-              <source
-                type="image/webp"
-                srcset="img/hero.webp 1x, img/hero@2x.webp 2x"
-                width="763"
-                height="1009"
-              />
+              <source type="image/webp" srcset="img/hero.webp 1x, img/hero@2x.webp 2x" />
 
               <img
                 src="img/hero.jpg"
@@ -144,36 +139,67 @@
           </div>
         </section>
 
-        <article class="lead">
-          <h2 class="lead__title">Book Your Dream Journey</h2>
+        <div class="container">
+          <article class="lead">
+            <div class="lead__container">
+              <h2 class="lead__title">Book Your Dream Journey</h2>
 
-          <form class="lead__form" action="" method="get">
-            <label class="lead__field">
-              <span class="visually-hidden">Enter your name:</span>
-              <input class="lead__input" type="text" name="name" placeholder="name" required />
-            </label>
+              <form class="lead__form" action="" method="post">
+                <div class="lead__fieldset">
+                  <label class="lead__field">
+                    <span class="visually-hidden">Enter your name:</span>
+                    <input
+                      class="lead__input"
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                      pattern="^[A-Za-zА-Яа-яЁё]{2,}$"
+                      required
+                    />
+                  </label>
 
-            <div class="lead__field">
-              <label class="lead__label">
-                <span class="visually-hidden">Enter your email:</span>
-                <input
-                  class="lead__input"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  required
+                  <label class="lead__field">
+                    <span class="visually-hidden">Enter your email:</span>
+                    <input
+                      class="lead__input"
+                      type="email"
+                      name="email"
+                      placeholder="E-mail"
+                      required
+                    />
+                  </label>
+                </div>
+
+                <div class="lead__field-checkbox">
+                  <label class="lead__label" for="accept"> I accept the Privacy Policy</label>
+                  <input
+                    class="lead__input-checkbox"
+                    type="checkbox"
+                    name="accept"
+                    id="accept"
+                    required
+                  />
+                </div>
+
+                <button class="lead__button button button--dark" type="submit">Submit Form</button>
+              </form>
+            </div>
+
+            <div class="lead__img">
+              <picture>
+                <source type="image/webp" srcset="img/lead.webp 1x, img/lead@2x.webp 2x" />
+
+                <img
+                  src="img/lead.jpg"
+                  srcset="img/lead@2x.jpg 2x"
+                  width="640"
+                  height="624"
+                  alt="Winter adventure scene with person in ski gear holding partner's hand on observation deck overlooking snow-covered mountain peaks."
                 />
-              </label>
+              </picture>
             </div>
-
-            <div class="lead__checkbox">
-              <label class="lead__label" for="accept"> I accept the Privacy Policy</label>
-              <input class="lead__input" type="checkbox" name="accept" id="accept" required />
-            </div>
-
-            <button class="lead__submit" type="submit">Submit Form</button>
-          </form>
-        </article>
+          </article>
+        </div>
       </main>
 
       <footer class="page__footer footer">
