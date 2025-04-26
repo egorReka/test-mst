@@ -3,5 +3,10 @@
 .page__main {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 100px;
+}
+
+
+.page__header {
+  margin-bottom: 100px;
 }

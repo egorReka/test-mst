@@ -1,0 +1,64 @@
+@use "../bootstrap.scss" as *;
+
+.routes__container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.routes__wrapper {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-content: center;
+  row-gap: 40px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 13px 20px 0;
+}
+
+.routes__list {
+  display: grid;
+  align-content: flex-start;
+  max-width: 614px;
+  min-width: 430px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.routes__item {
+  display: flex;
+  align-content: flex-start;
+  column-gap: 20px;
+  padding: 40px 0 40px;
+  border-bottom: 1px solid $color-bright-grey;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  &::before {
+    display: grid;
+    place-content: center;
+    min-width: 58px;
+    height: 47px;
+    background-image: url('/__spritemap#sprite-mark-view');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+}
+
+.routes__img img {
+  max-height: 1000px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.routes__button {
+  align-self: flex-end;
+}
