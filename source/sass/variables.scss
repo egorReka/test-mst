@@ -13,8 +13,10 @@ $color-default-white-80: rgba($color-default-white, 0.8);
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
 $color-nero: #222222;
+$color-nero-80: rgba($color-nero, 0.8);
 $color-jaguar: #282829;
 $color-jaguar-70: rgba($color-jaguar, 0.7);
+$color-jaguar-40: rgba($color-jaguar, 0.4);
 $color-swirl: #d5c9be;
 $color-swirl-30: rgba($color-swirl, 0.3);
 $color-swirl-50: rgba($color-swirl, 0.5);
@@ -75,3 +77,6 @@ $retina-dppx: 1.5dppx;
 // ---------------------------------
 
 $pad-desktop: 162px;
+$pad-desktop-100: 100px;
+$pad-tablet: 60px;
+$pad-mobile: 20px;

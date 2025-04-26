@@ -2,19 +2,19 @@
 
 .container {
   width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 $pad-desktop;
 
-  @include vp-768 {
-    padding: 0 40px;
+  @include vp-1439 {
+    padding: 0 $pad-desktop-100;
   }
 
-  @include vp-1280 {
-    padding: 0 60px;
+  @include vp-1023 {
+    padding: 0 $pad-tablet;
   }
 
-  @include vp-1920 {
-    padding: 0 $pad-desktop;
-    max-width: 1920px;
+  @include vp-767 {
+    padding: 0 $pad-mobile;
   }
 }

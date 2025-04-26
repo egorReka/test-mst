@@ -16,54 +16,67 @@
     <div class="wrapper">
       <header class="page__header header">
         <div class="header__container">
-          <div class="header__wrapper">
-            <div class="logo">
-              <img
-                class="logo__img"
-                src="./img/logo.svg"
-                width="50"
-                height="50"
-                alt="Logotype travel company."
-              />
-              <p class="logo__title">Travel</p>
-            </div>
+          <div class="header__sticky-wrapper" data-sticky-header>
+            <div class="header__wrapper">
+              <div class="logo">
+                <img
+                  class="logo__img"
+                  src="./img/logo.svg"
+                  width="50"
+                  height="50"
+                  alt="Logotype travel company."
+                />
+                <p class="logo__title">Travel</p>
+              </div>
 
-            <button class="burger" type="button" aria-label="Open the menu." data-toggle-menu>
-              <span class="burger__line"></span>
-            </button>
+              <button class="burger" type="button" aria-label="Open the menu." data-toggle-menu>
+                <span class="burger__line"></span>
+              </button>
 
-            <div class="header__nav-container" data-nav-container>
-              <div class="header__nav-collapse-wrapper">
-                <nav class="nav">
-                  <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#hero">About Us</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#routes">Routes</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#footer">Contacts</a></li>
-                  </ul>
-                </nav>
+              <div class="header__nav-container" data-nav-container>
+                <div class="header__nav-collapse-wrapper">
+                  <nav class="nav">
+                    <ul class="nav__list header__nav-list">
+                      <li class="nav__item">
+                        <a class="nav__link header__nav-link" href="#hero">About Us</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link header__nav-link" href="#routes">Routes</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link header__nav-link" href="#footer">Contacts</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
             </div>
           </div>
 
           <section class="header__section hero" id="hero">
-            <div class="hero__content">
+            <div class="hero__content" data-sticky-content>
               <h1 class="hero__title">Discover the World with Us</h1>
               <p class="hero__text">Top tours around the globe — unforgettable journeys await</p>
 
               <ul class="hero__list">
                 <li class="hero__item">
-                  from <span class="hero__item-accent">$499</span> per tour — affordable prices
+                  <p class="hero__item-text">
+                    from <span class="hero__item-accent">$499</span> per tour — affordable prices
+                  </p>
                 </li>
                 <li class="hero__item">
-                  <span class="hero__item-accent">35%</span> discount for early bookings
+                  <p class="hero__item-text">
+                    <span class="hero__item-accent">35%</span> discount for early bookings
+                  </p>
                 </li>
                 <li class="hero__item">
-                  Top 10 destinations for
-                  <span class="hero__item-accent">2025</span>
+                  <p class="hero__item-text">
+                    Top 10 destinations for <span class="hero__item-accent">2025</span>
+                  </p>
                 </li>
               </ul>
 
-              <a class="hero__button button" href="#">Book a Tour</a>
+              <a class="hero__button button" href="#lead">Book a Tour</a>
             </div>
           </section>
 
@@ -109,13 +122,24 @@
 
             <div class="routes__wrapper">
               <ul class="routes__list">
-                <li class="routes__item">Explore exotic islands and beaches</li>
-                <li class="routes__item">Dive into the atmosphere of ancient cities</li>
-                <li class="routes__item">Enjoy gastronomic tours</li>
-                <li class="routes__item">Travel safely and comfortably</li>
+                <li class="routes__item">
+                  Bali, Indonesia — Relax on pristine beaches and explore vibrant temples.
+                </li>
+                <li class="routes__item">
+                  Paris, France — Discover the magic of the City of Lights and its world-famous
+                  cuisine.
+                </li>
+                <li class="routes__item">
+                  Kyoto, Japan — Immerse yourself in centuries-old traditions and breathtaking
+                  gardens.
+                </li>
+                <li class="routes__item">
+                  Cape Town, South Africa — Adventure through mountains, beaches, and vibrant city
+                  life.
+                </li>
               </ul>
 
-              <a class="routes__button button" href="#">Book a Tour</a>
+              <a class="routes__button button" href="#lead">Book a Tour</a>
             </div>
 
             <div class="routes__img">
@@ -140,7 +164,7 @@
         </section>
 
         <div class="container">
-          <article class="lead">
+          <article class="lead" id="lead">
             <div class="lead__container">
               <h2 class="lead__title">Book Your Dream Journey</h2>
 
@@ -204,11 +228,15 @@
 
       <footer class="page__footer footer" id="footer">
         <div class="footer__nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link nav__link--xl" href="#hero">About Us</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--xl" href="#routes">Routes</a></li>
+          <ul class="nav__list footer__nav-list">
             <li class="nav__item">
-              <a class="nav__link nav__link--xl" href="#footer">Contacts</a>
+              <a class="nav__link nav__link--xl footer__nav-link" href="#hero">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--xl footer__nav-link" href="#routes">Routes</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--xl footer__nav-link" href="#footer">Contacts</a>
             </li>
           </ul>
         </div>
@@ -321,7 +349,7 @@
             </div>
 
             <div class="footer__wrapper">
-              <a class="footer__button button button--second" href="#">Book a Tour</a>
+              <a class="footer__button button button--second" href="#lead">Book a Tour</a>
               <a class="footer__link" href="#">Terms of Use</a>
             </div>
           </div>

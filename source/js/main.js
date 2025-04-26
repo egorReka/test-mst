@@ -1,3 +1,7 @@
+import { initStickyHeader } from './module/sticky-header';
+import { initToggleMenu } from './module/toggle-menu';
+
+
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
@@ -10,7 +14,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-
+    initStickyHeader();
+    // initToggleMenu();
   });
 });
 

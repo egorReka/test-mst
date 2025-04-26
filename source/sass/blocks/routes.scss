@@ -5,6 +5,16 @@
   grid-template-columns: auto 1fr auto;
   max-width: 1920px;
   margin: 0 auto;
+
+  @include vp-1439 {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 30px;
+  }
+
+  @include vp-374 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 .routes__wrapper {
@@ -15,6 +25,21 @@
   width: 100%;
   margin: 0 auto;
   padding: 13px 20px 0;
+
+  @include vp-1439 {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+  }
+
+  @include vp-767 {
+    padding: 0 $pad-mobile;
+  }
+
+  @include vp-374 {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    row-gap: 20px;
+  }
 }
 
 .routes__list {
@@ -25,13 +50,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include vp-767 {
+    min-width: auto;
+  }
 }
 
 .routes__item {
   display: flex;
   align-content: flex-start;
   column-gap: 20px;
-  padding: 40px 0 40px;
+  padding: 32px 0;
   border-bottom: 1px solid $color-bright-grey;
 
   &:last-of-type {
@@ -49,7 +78,43 @@
     background-size: contain;
     content: "";
   }
+
+  @include vp-767 {
+    padding: 20px 0;
+
+    &::before {
+      min-width: 48px;
+      height: 37px;
+    }
+  }
 }
+
+.routes__img {
+  @include vp-1439 {
+    &:first-child {
+      grid-row: 2 / span 1;
+      grid-column: 1 / span 1;
+    }
+
+    &:last-child {
+      grid-row: 2 / span 1;
+      grid-column: 2 / span 1;
+    }
+  }
+
+  @include vp-374 {
+    &:first-child {
+      grid-row: 2 / span 1;
+      grid-column: 1 / span 1;
+    }
+
+    &:last-child {
+      grid-row: 3 / span 1;
+      grid-column: 1 / span 1;
+    }
+  }
+}
+
 
 .routes__img img {
   max-height: 1000px;

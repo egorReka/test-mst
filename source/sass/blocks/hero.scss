@@ -7,20 +7,56 @@
 .hero__content {
   display: grid;
   max-width: 740px;
-  padding: 204px 0 0;
+  padding: 184px 0 0;
+
+  @include vp-1439 {
+    padding-top: 150px;
+  }
+
+  @include vp-1279 {
+    padding-top: 110px;
+  }
+
+  @include vp-1023 {
+    max-width: none;
+  }
+
+  @include vp-767 {
+    padding-top: 25px;
+  }
 }
 
 .hero__title {
   margin: 0 0 29px;
   font-family: $ff-prata;
-  font-size: 80px;
+  font-size: 3.3rem;
   line-height: 1;
+
+  @include vp-1279 {
+    font-size: 3rem;
+    margin: 0 0 24px;
+  }
+
+  @include vp-767 {
+    font-size: 2rem;
+    margin: 0 0 15px;
+  }
 }
 
 .hero__text {
   margin: 0 0 50px;
-  font-size: 45px;
+  font-size: 1.8rem;
   line-height: 1.2;
+
+  @include vp-1279 {
+    font-size: 1.6rem;
+    margin: 0 0 30px;
+  }
+
+  @include vp-767 {
+    font-size: 1.2rem;
+    margin: 0 0 20px;
+  }
 }
 
 .hero__list {
@@ -29,6 +65,10 @@
   margin: 0 0 40px;
   padding: 0;
   list-style: none;
+
+  @include vp-767 {
+    gap: 20px;
+  }
 }
 
 .hero__item {
@@ -40,7 +80,6 @@
   line-height: 1.1;
   border-radius: 4px;
   background-color: $color-jaguar-70;
-
 
   &::before {
     content: "";
@@ -54,9 +93,15 @@
   }
 }
 
+.hero__item-text {
+  margin: 0;
+}
+
 .hero__item-accent {
+  display: inline-block;
+  vertical-align: middle;
   font-family: $ff-prata;
-  font-size: 40px;
+  font-size: 1.6rem;
   line-height: 1;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -64,4 +109,8 @@
 
 .hero__button {
   justify-self: flex-start;
+
+  @include vp-1023 {
+    justify-self: auto;
+  }
 }

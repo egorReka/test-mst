@@ -7,16 +7,17 @@
   padding: 7px 0;
   font-family: $ff-prata;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 1.5rem;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .logo__img {
-  width: 50px;
-  min-width: min-content;
+  min-width: 50px;
   height: 40px;
+
+  z-index: 2;
 }
 
 .logo__title {

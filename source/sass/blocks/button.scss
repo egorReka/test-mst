@@ -6,7 +6,7 @@
   display: block;
   padding: 30px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
@@ -89,6 +89,10 @@
   &--second {
     font-weight: 400;
     font-style: italic;
-    font-size: 20px;
+    font-size: 0.8rem;
+  }
+
+  @include vp-767 {
+    padding: 20px;
   }
 }
