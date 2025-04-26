@@ -1,0 +1,39 @@
+@use "../bootstrap.scss" as *;
+
+.footer {
+  background-color: $color-nero;
+}
+
+.footer__nav {
+  padding: 18px 0;
+  border-bottom: 2px solid $color-swirl;
+  border-top: 2px solid $color-swirl;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 43px 0 53px;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  row-gap: 38px;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.footer__link {
+  display: block;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: $color-swirl;
+}
+
+.footer__button {}

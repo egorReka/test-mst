@@ -22,6 +22,12 @@
     color: $color-default-white;
   }
 
+  &--second {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+  }
+
   // transition: background-color $trans-default;
 
   @include hover-focus {

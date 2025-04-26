@@ -1,0 +1,18 @@
+@use "../bootstrap.scss" as *;
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.social__link {
+  display: grid;
+  place-content: center;
+  padding: 10px;
+  color: $color-swirl;
+}
