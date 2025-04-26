@@ -1,3 +1,5 @@
+@use "../bootstrap.scss" as *;
+
 .nav__list {
   display: flex;
   justify-content: center;
@@ -17,4 +19,26 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: inherit;
+
+  &--xl {
+    padding: 20px 28px;
+    font-size: 20px;
+  }
+
+  @media (hover: hover) {
+    &:after {
+      display: block;
+      height: 2px;
+      width: 0%;
+      background-color: $color-default-white;
+      transition: width $trans-ease-in-out-300;
+      content: "";
+    }
+
+    &:hover:after,
+    &:focus:after,
+    &:active:after {
+      width: 100%;
+    }
+  }
 }

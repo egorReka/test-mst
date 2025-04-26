@@ -30,10 +30,22 @@
 
 .footer__link {
   display: block;
+  margin: 0 auto;
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
   color: $color-swirl;
-}
+  transition: color $trans-ease-in-out-300;
 
-.footer__button {}
+  @media (hover: hover) {
+
+    &:hover,
+    &:focus {
+      color: $color-default-white;
+    }
+
+    &:active {
+      color: $color-default-white-80;
+    }
+  }
+}

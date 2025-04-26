@@ -14,5 +14,21 @@
   display: grid;
   place-content: center;
   padding: 10px;
+  border-radius: 4px;
   color: $color-swirl;
+
+  transition: background-color $trans-ease-in-out-300, color $trans-ease-in-out-300;
+
+  @media (hover: hover) {
+
+    &:hover,
+    &:focus {
+      color: $color-default-white;
+      background-color: $color-swirl-30;
+    }
+
+    &:active {
+      background-color: $color-swirl-50;
+    }
+  }
 }
