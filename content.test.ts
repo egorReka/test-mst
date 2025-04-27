@@ -15,7 +15,9 @@ describe('Content Tests', () => {
   // - настройки viewport для адаптивности
   it('should have valid meta tags', () => {
     expect(html).toMatch(/<meta\s+charset="utf-8"\s*>/i);
-    expect(html).toMatch(/<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1"\s*>/i);
+    expect(html).toMatch(
+      /<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1"\s*>/i
+    );
   });
 
   // Проверяем наличие главной навигации

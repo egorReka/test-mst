@@ -21,7 +21,6 @@
   transition: background-color $trans-ease-in-out-300, color $trans-ease-in-out-300;
 
   @media (hover: hover) {
-
     &:hover,
     &:focus {
       color: $color-default-white;

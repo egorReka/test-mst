@@ -26,19 +26,18 @@
   &::after {
     display: block;
     height: 2px;
-    // background-color: $color-default-white;
     transition: width $trans-ease-in-out-300;
     content: "";
   }
 
   @media (hover: hover) {
-    &:after {
+    &::after {
       width: 0%;
     }
 
-    &:hover:after,
-    &:focus:after,
-    &:active:after {
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
       width: 100%;
     }
   }

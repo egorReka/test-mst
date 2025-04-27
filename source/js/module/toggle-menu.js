@@ -1,5 +1,5 @@
-const toggleMenu = document.querySelector('[data-toggle-menu]');
-const toggleContainer = document.querySelector('[data-nav-container]');
+const toggleMenu = document.querySelector('[data-toggle="menu"]');
+const toggleContainer = document.querySelector('[data-container="nav"]');
 
 const openMenu = () => {
   toggleMenu.classList.add('is-active');
@@ -55,4 +55,4 @@ const destroyToggleMenu = () => {
   closeMenu();
 };
 
-export {initToggleMenu, destroyToggleMenu};
+export { initToggleMenu, destroyToggleMenu };

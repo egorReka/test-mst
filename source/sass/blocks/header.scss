@@ -34,38 +34,36 @@
   grid-column: 1 / span 1;
   transition: transform $trans-default;
 
-  &.isStickyStarted {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0 $pad-desktop;
-    transform: translateY(-100%);
-    background-color: $color-nero-80;
-    opacity: 0;
-  }
-
-  &.isStickyStarted.isStickyFinished {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
   @include vp-1439 {
     z-index: 2;
+  }
+}
 
-    &.isStickyStarted {
-      padding: 0 $pad-desktop-100;
-    }
+.header__sticky-wrapper.is-sticky-started {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 $pad-desktop;
+  transform: translateY(-100%);
+  background-color: $color-nero-80;
+  opacity: 0;
+
+  @include vp-1439 {
+    padding: 0 $pad-desktop-100;
   }
 
   @include vp-1023 {
-    &.isStickyStarted {
-      padding: 0;
-    }
+    padding: 0;
   }
+}
+
+.header__sticky-wrapper.is-sticky-started.is-sticky-finished {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .header__wrapper {
@@ -197,7 +195,7 @@
   @include vp-767 {
     font-weight: 700;
 
-    &:after {
+    &::after {
       background-color: $color-jaguar;
     }
   }

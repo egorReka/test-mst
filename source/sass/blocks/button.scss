@@ -18,7 +18,7 @@
   user-select: none;
   cursor: pointer;
 
-  &:before {
+  &::before {
     position: absolute;
     top: -2px;
     left: -2px;
@@ -37,9 +37,8 @@
   }
 
   @media (hover: hover) {
-
-    &:hover:before,
-    &:focus:before {
+    &:hover::before,
+    &:focus::before {
       opacity: 1;
       animation: glowing 20s linear infinite;
     }
@@ -49,7 +48,7 @@
     }
   }
 
-  &:after {
+  &::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -75,7 +74,8 @@
     color: $color-default-white;
     transition: color $trans-ease-in-out-300;
 
-    &:after {
+    /* stylelint-disable-next-line */
+    &::after {
       background-color: $color-jaguar;
     }
 
