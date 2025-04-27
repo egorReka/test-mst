@@ -50,21 +50,21 @@ export default {
       png: {
         // https://sharp.pixelplumbing.com/api-output#png
         quality: 80, // Качество сжатия (0-100)
-        palette: true // Использовать палитру цветов
+        palette: true, // Использовать палитру цветов
       },
 
       // Настройки оптимизации JPEG
       jpeg: {
         // https://sharp.pixelplumbing.com/api-output#jpeg
         quality: 80,
-        progressive: true
+        progressive: true,
       },
 
       // Настройки оптимизации JPG
       jpg: {
         // https://sharp.pixelplumbing.com/api-output#jpeg
         quality: 80,
-        progressive: true
+        progressive: true,
       },
 
       // Настройки кэширования
@@ -82,18 +82,18 @@ export default {
         sourceMapContents: true,
         sourceMap: true,
         logger: {
-          warn: function(message) {
+          warn: function (message) {
             // eslint-disable-next-line no-console
             console.warn(message);
           },
-          error: function(error) {
+          error: function (error) {
             // eslint-disable-next-line no-console
             console.error(error);
-          }
+          },
         },
-        quietDeps: true
-      }
-    }
+        quietDeps: true,
+      },
+    },
   },
 
   // Основные настройки проекта
@@ -108,6 +108,6 @@ export default {
     watch: {
       usePolling: true,
       interval: 100,
-    }
-  }
+    },
+  },
 };

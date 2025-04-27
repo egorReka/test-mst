@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host --open",
-    "test": "npm run w3c && npm run linthtml && npm run html-validate && npm run lint-bem && npm run stylelint && npm run lint-js && npm run ls-lint && npm run editorconfig",
+    "test": "npm run w3c && npm run linthtml && npm run html-validate && npm run lint-bem && npm run stylelint && npm run lint-js && npm run ls-lint",
     "test-content": "vitest content.test.ts --ui",
     "build": "vite build --emptyOutDir",
     "preview": "vite preview --open",

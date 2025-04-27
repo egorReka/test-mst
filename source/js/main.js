@@ -1,12 +1,9 @@
 import { initStickyHeader } from './module/sticky-header';
 import { initToggleMenu } from './module/toggle-menu';
 
-
 window.addEventListener('DOMContentLoaded', () => {
-
   // Utils
   // ---------------------------------
-
 
   // Modules
   // ---------------------------------
@@ -18,7 +15,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initToggleMenu();
   });
 });
-
 
 // привязывайте js не на классы, а на дата атрибуты (data-validate)
 

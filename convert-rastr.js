@@ -26,9 +26,7 @@ const work = files.map(async (file) => {
   // sharp(file) - открываем исходный файл
   // .webp() - конвертируем в webp
   // .toFile() - сохраняем результат
-  await sharp(file)
-    .webp()
-    .toFile(webpFileName);
+  await sharp(file).webp().toFile(webpFileName);
 
   // TODO: добавить уменьшение размера для изображений @2x
   // Увеличиваем прогресс на 1

@@ -38,15 +38,3 @@ end_of_line = lf
 
 [*.svg]
 insert_final_newline = false
-
-[.editorconfig]
-end_of_line = unset
-
-[.eslintrc]
-end_of_line = unset
-
-[.eslintignore]
-end_of_line = unset
-
-[.htmlvalidate.cjs]
-end_of_line = unset
