@@ -22,7 +22,7 @@
 ### Как background-image:
 
 ```css
-background-image: url('./__spritemap#sprite-spirit-view');
+background-image: url('/__spritemap#sprite-spirit-view');
 ```
 
 ---
