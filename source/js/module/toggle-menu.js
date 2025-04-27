@@ -3,7 +3,6 @@ const toggleContainer = document.querySelector('[data-nav-container]');
 
 const openMenu = () => {
   toggleMenu.classList.add('is-active');
-  // toggleContainer.classList.add('is-open');
   document.body.classList.add('scroll-lock');
   document.addEventListener('keydown', onClickEscape);
   document.addEventListener('click', onClick);
@@ -11,7 +10,6 @@ const openMenu = () => {
 
 const closeMenu = () => {
   toggleMenu.classList.remove('is-active');
-  // toggleContainer.classList.remove('is-open');
   document.body.classList.remove('scroll-lock');
   document.removeEventListener('keydown', onClickEscape);
   document.removeEventListener('click', onClick);

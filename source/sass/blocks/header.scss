@@ -63,19 +63,7 @@
 
   @include vp-1023 {
     &.isStickyStarted {
-      padding: 0 $pad-tablet;
-    }
-  }
-
-  @include vp-767 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-
-    &.isStickyStarted {
-      padding: 0 $pad-mobile;
+      padding: 0;
     }
   }
 }
@@ -92,7 +80,6 @@
   }
 
   @include vp-767 {
-    position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 20px $pad-mobile;
@@ -120,7 +107,7 @@
   }
 
   @include vp-767 {
-    padding: 100px $pad-mobile 20px;
+    padding: 0 $pad-mobile 20px;
   }
 }
 
