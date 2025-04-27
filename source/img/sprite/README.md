@@ -9,20 +9,20 @@
 
 ```html
 <svg>
-  <use xlink:href="/__spritemap#sprite-icon"></use>
+  <use xlink:href="./__spritemap#sprite-icon"></use>
 </svg>
 ```
 
 ### Как IMG:
 
 ```html
-<img src="/__spritemap#sprite-spiriit-view" />
+<img src="./__spritemap#sprite-spiriit-view" />
 ```
 
 ### Как background-image:
 
 ```css
-background-image: url('/__spritemap#sprite-spirit-view');
+background-image: url('./__spritemap#sprite-spirit-view');
 ```
 
 ---
